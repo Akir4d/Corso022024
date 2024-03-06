@@ -15,7 +15,7 @@ int main()
     scanf("%d", &input);
     int a = 5, b = 3, risultato;
     risultato = a + b;
-    printf("IL risultato è: %d\n", risultato);
+    printf("Il risultato è: %d\n", risultato);
     float numeroFloat = 3.14;
     int numeroIntero = (int)numeroFloat;
     printf("il numero Float è %f, mentre intero è %d\n", numeroFloat, numeroIntero);
