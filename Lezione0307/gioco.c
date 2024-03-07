@@ -34,7 +34,7 @@ int main() {
         sec--;
         char menu = print_menu();
         if(menu == 'B' || menu == 'b') return 0;
-        punti = punti + gioca_livello("Di che colore è mare?", "Rosso", "Bianco", "Blue", 3);
+        punti = punti + gioca_livello("Di che colore è il mare?", "Rosso", "Bianco", "Blue", 3);
         punti = punti + gioca_livello("Di che colore è il cavallo di Napoleone?", "Nero", "Bianco", "Blue", 2);
         punti = punti + gioca_livello("Come si chiama il prof?", "Pippo", "Eolo", "Paolo", 3);
         printf("il tuo punteggio è %d\n\n\n", punti * 7);
