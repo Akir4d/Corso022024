@@ -5,7 +5,7 @@ void scriviVettore(int *ptr)
     // Cicliamo 10 volte per inserire i numeri interi
     for (int i = 0; i < 10; i++)
     {
-        printf("Inserisci un numero per %d: ", i);
+        printf("Inserisci un numero per n[%d]: ", i);
         scanf("%d", ptr);
         ptr++;
     }
@@ -16,7 +16,7 @@ void leggiVettore(int *ptr)
     // Cicliamo 10 volte per stampare i 10 elementi del vettore
     for (int i = 0; i < 10; i++)
     {
-        printf("Elemento %d del vettore: %d\n", i, *ptr);
+        printf("Elemento n[%d] = %d\n", i, *ptr);
         ptr++;
     }
 }
