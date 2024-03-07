@@ -21,6 +21,15 @@ void leggiVettore(int *ptr)
     }
 }
 
+int dammiLaSomma(int *ptr)
+{
+  int somma = 0;
+  for(int i = 0; i < 10; i++){
+    somma = somma + ptr[i];
+  }
+  return somma;
+}
+
 int main()
 {
     // Dichiarazione e inizializzazione di un array di 10 interi
@@ -35,4 +44,5 @@ int main()
 
     scriviVettore(n_ptr);
     leggiVettore(n_ptr);
+    printf("Somma: %d", dammiLaSomma(n_ptr));
 }
