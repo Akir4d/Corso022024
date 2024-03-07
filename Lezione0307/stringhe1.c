@@ -8,6 +8,6 @@ int main() {
     // non si possono comparare 2 array dà errore
     // if(stringa1 == stringa2) printf("%s\n", stringa1);
     // ma possiamo comparare il primo carattere
-    if(stringa1[0] == stringa2[0]) printf("%s\n", stringa1);
+    if(stringa1[0] == 'C' ||  stringa1[0] == 'c') printf("%s\n", stringa2);
     return 0;
 }
