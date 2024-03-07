@@ -6,7 +6,7 @@
 // Funzione eseguita dal thread 1
 void *threadFunction1(void *arg) {
     printf("Thread 1 inizia\n");
-    sleep(20); // Pausa di 60 secondi
+    sleep(20); // Pausa di 20 secondi
     printf("Thread 1 riprende dopo 20 secondi\n");
     return NULL;
 }
@@ -14,7 +14,7 @@ void *threadFunction1(void *arg) {
 // Funzione eseguita dal thread 2
 void *threadFunction2(void *arg) {
     printf("Thread 2 inizia\n");
-    sleep(10); // Pausa di 60 secondi
+    sleep(10); // Pausa di 10 secondi
     printf("Thread 2 riprende dopo 10 secondi\n");
     return NULL;
 }
