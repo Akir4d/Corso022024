@@ -25,7 +25,7 @@ while running:
 		data = connection.recv(1024)
 		try:
 			filelist =  os.listdir(data.decode('utf-8').strip())
-			tosend = ",".join(filelist) + '\n'
+			tosend = "\n".join(sorted(filelist)) + '\n'
 		except:
 			tosend = "Wrong path"
 		connection.sendall(tosend.encode())
