@@ -16,6 +16,6 @@ for user in user_list:
 		conn = http.client.HTTPConnection("127.0.0.1", 80)
 		conn.request("POST", "/login.php", post_par, headers)
 		response = conn.getresponse()
-		print (response.getheader('Location'))
 		if(response.getheader('Location') == "benvenuto.php"):
 				print("Loggato con: ", user, "-", pwd)
+				exit()

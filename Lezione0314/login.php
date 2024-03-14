@@ -3,7 +3,7 @@ if (isset($_POST['Submit'])){
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
-	$vuser = "testuser1";
+	$vuser = "admin2";
 	$vpass = "napoli123";
 	$stat = "";
 
