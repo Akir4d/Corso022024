@@ -1,17 +1,18 @@
 <?php
 if (isset($_POST['Submit'])){
-$username = $_POST['username'];
-$password = $_POST['password'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
 
-$vuser = "testuser1";
-$vpass = "napoli123";
-$stat = "";
-if ($username == $vuser && $password == $vpass) {
-	header("Location: benvenuto.php");
-	exit();
-} else {
-	$stat = "Username o Passerrati";
-}
+	$vuser = "testuser1";
+	$vpass = "napoli123";
+	$stat = "";
+
+	if ($username == $vuser && $password == $vpass) {
+		header("Location: benvenuto.php");
+		exit();
+	} else {
+		$stat = " - Username o Password errati";
+	}
 }
 ?>
 <!DOCTYPE html>
