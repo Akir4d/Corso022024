@@ -10,8 +10,9 @@ print("Sto ascoltando le connessione sulla porta:", SRV_PORT)
 connection, address = s.accept()
 print("Client collegato con l'indirizzo:", address)
 while True:
+	print ("username: ", end="")
 	data = connection.recv(1024)
 	if not data: break
-	print(data.decode('utf-8'))
+	print(data.decode('utf-8').strip())
 
-connnection.close()
+connection.close()
