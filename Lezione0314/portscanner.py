@@ -17,4 +17,3 @@ for port in range(lowport, highport + 1):
 	else:
 		print('Porta', port, ' - CHIUSA')
 	s.close()
- 
