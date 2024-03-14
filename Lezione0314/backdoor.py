@@ -15,10 +15,11 @@ while running:
 		data = connection.recv(1024)
 	except: continue
 
-	if(data.decode('utf-8').strip() == '1'):
+	c = data.decode('utf-8').strip()
+	if(c == '1'):
 		tosend = platform.platform() + " " + platform.machine() + "\n"
 		connection.sendall(tosend.encode())
-	elif(data.decode('utf-8').strip() == '2'):
+	elif(c == '2'):
 		connection.sendall(b'Path: ')
 		data = connection.recv(1024)
 		try:
@@ -30,13 +31,10 @@ while running:
 		except:
 			tosend = "Wrong path"
 		connection.sendall(tosend.encode())
-	elif(data.decode('utf-8').strip() == '0'):
+	elif(c == '0'):
 		connection.close()
 		connection, address = s.accept()
-	elif(data.decode('utf-8').strip() == '9'): #delete after debug
-		running = False
+	elif(c == '9'): running = False #delete after debug
 
 if connection: connection.close()
 s.close()
-
-
